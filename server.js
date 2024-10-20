@@ -28,7 +28,7 @@ wss.on('connection', (ws) => {
   console.log('Client connected');
 
   // Send audio every 5 seconds
-  const interval = setInterval(broadcastAudio, 5000);
+  const interval = setInterval(broadcastAudio, 7000);
 
   ws.on('close', () => {
     console.log('Client disconnected');
